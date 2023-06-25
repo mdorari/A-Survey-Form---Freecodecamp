@@ -13,148 +13,154 @@
     />
   </head>
   <body>
-    <div class="divider"></div>
-    <div class="info-container">
-      <h1 class="title">Lorem, ipsum dolor.</h1>
-      <p class="details">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque
-        repudiandae provident blanditiis laudantium laboriosam pariatur dicta,
-        aperiam, eveniet ducimus hic consequuntur libero incidunt voluptatum.
-        Obcaecati quis vel possimus nostrum repellat perferendis veniam autem
-        sequi. Fugit, eaque, sunt numquam ducimus laborum molestiae architecto
-        ipsam reiciendis ipsa voluptatum minus eos commodi facere. Nihil minima
-        unde et voluptatum repudiandae quod nulla assumenda?
-      </p>
-      <div class="social-container"></div>
+    <div class="form">
+      <div class="divider"></div>
+      <div class="info-container">
+        <h1 class="title">Lorem, ipsum dolor.</h1>
+        <p class="details">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque
+          repudiandae provident blanditiis laudantium laboriosam pariatur dicta,
+          aperiam, eveniet ducimus hic consequuntur libero incidunt voluptatum.
+          Obcaecati quis vel possimus nostrum repellat perferendis veniam autem
+          sequi. Fugit, eaque, sunt numquam ducimus laborum molestiae architecto
+          ipsam reiciendis ipsa voluptatum minus eos commodi facere. Nihil
+          minima unde et voluptatum repudiandae quod nulla assumenda?
+        </p>
+        <div class="social-container"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="from-container">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+        <form id="survey-form">
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name"
+          /></label>
+          <label for="email" id="email-label"
+            >Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your Email"
+          /></label>
+          <label for="number" id="number-label"
+            >Your refferal code:
+            <input
+              name="number"
+              type="number"
+              id="number"
+              min="5"
+              max="10"
+              pattern="[0-9]{8,}"
+              placeholder="Enter a number from 5 to 10"
+          /></label>
+          <label for="dropdown"
+            >Sex:
+            <select id="dropdown" name="gender">
+              <option selected value="0">Don't want to mention</option>
+              <option value="1">Male</option>
+              <option value="3">Female</option>
+            </select>
+          </label>
+          <label for="radio1"
+            >Less than 18
+            <input
+              name="radio-option"
+              type="radio"
+              id="radio1"
+              value="radio1"
+              checked
+              class="inline"
+            />
+          </label>
+          <label for="radio2"
+            >18 or more
+            <input
+              name="radio-option"
+              type="radio"
+              id="radio2"
+              value="radio2"
+              class="inline"
+            />
+          </label>
+          <hr />
+          <label for="checkbox1"
+            >Html
+            <input
+              name="checkbox1"
+              value="Html"
+              type="checkbox"
+              id="checkbox1"
+              class="inline"
+            />
+          </label>
+          <label for="checkbox2"
+            >Css
+            <input
+              name="checkbox2"
+              value="Css"
+              type="checkbox"
+              id="checkbox2"
+              class="inline"
+            />
+          </label>
+          <label for="checkbox3"
+            >HavaScript
+            <input
+              name="checkbox3"
+              value="HavaScript"
+              type="checkbox"
+              id="checkbox3"
+              class="inline"
+            />
+          </label>
+          <label for="checkbox4"
+            >Python
+            <input
+              name="checkbox4"
+              value="Python"
+              type="checkbox"
+              id="checkbox4"
+              class="inline"
+            />
+          </label>
+          <label for="checkbox5"
+            >Kotlin
+            <input
+              name="checkbox5"
+              value="Kotlin"
+              type="checkbox"
+              id="checkbox5"
+              class="inline"
+            />
+          </label>
+          <label for="comments"
+            >Additional comments:
+            <textarea
+              id="comments"
+              placeholder="Add additional comments"
+              rows="6"
+              cols="30"
+            ></textarea>
+          </label>
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="divider"></div>
     </div>
-    <div class="divider"></div>
-    <div class="from-container">
-      <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">
-        Thank you for taking the time to help us improve the platform
-      </p>
-      <form id="survey-form">
-        <label for="name" id="name-label"
-          >Name:
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            placeholder="Enter your name"
-        /></label>
-        <label for="email" id="email-label"
-          >Email:
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Enter your Email"
-        /></label>
-        <label for="number" id="number-label"
-          >Your refferal code:
-          <input
-            name="number"
-            type="number"
-            id="number"
-            min="5"
-            max="10"
-            pattern="[0-9]{8,}"
-            placeholder="Enter a number from 5 to 10"
-        /></label>
-        <label for="dropdown"
-          >Sex:
-          <select id="dropdown" name="gender">
-            <option selected value="0">Don't want to mention</option>
-            <option value="1">Male</option>
-            <option value="3">Female</option>
-          </select>
-        </label>
-        <label for="radio1"
-          >Less than 18
-          <input
-            name="radio-option"
-            type="radio"
-            id="radio1"
-            value="radio1"
-            checked
-            class="inline"
-          />
-        </label>
-        <label for="radio2"
-          >18 or more
-          <input
-            name="radio-option"
-            type="radio"
-            id="radio2"
-            value="radio2"
-            class="inline"
-          />
-        </label>
-        <hr />
-        <label for="checkbox1"
-          >Html
-          <input
-            name="checkbox1"
-            value="Html"
-            type="checkbox"
-            id="checkbox1"
-            class="inline"
-          />
-        </label>
-        <label for="checkbox2"
-          >Css
-          <input
-            name="checkbox2"
-            value="Css"
-            type="checkbox"
-            id="checkbox2"
-            class="inline"
-          />
-        </label>
-        <label for="checkbox3"
-          >HavaScript
-          <input
-            name="checkbox3"
-            value="HavaScript"
-            type="checkbox"
-            id="checkbox3"
-            class="inline"
-          />
-        </label>
-        <label for="checkbox4"
-          >Python
-          <input
-            name="checkbox4"
-            value="Python"
-            type="checkbox"
-            id="checkbox4"
-            class="inline"
-          />
-        </label>
-        <label for="checkbox5"
-          >Kotlin
-          <input
-            name="checkbox5"
-            value="Kotlin"
-            type="checkbox"
-            id="checkbox5"
-            class="inline"
-          />
-        </label>
-        <label for="comments"
-          >Additional comments:
-          <textarea
-            id="comments"
-            placeholder="Add additional comments"
-            rows="6"
-            cols="30"
-          ></textarea>
-        </label>
-        <input type="submit" id="submit" value="Submit" />
-      </form>
+    <div class="background-container">
+      <div class="background-main"></div>
+      <div class="background-left"></div>
     </div>
-    <div class="divider"></div>
   </body>
 </html>
